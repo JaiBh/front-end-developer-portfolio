@@ -1,8 +1,4 @@
 import Image from "next/image";
-import headshot from "@/assets/headshot.jpeg";
-import personal_finance_thumbnail from "@/assets/personal_finance_thumbnail.png";
-import fusionfootwear_store_thumbnail from "@/assets/fusionfootwear_store_thumnail.png";
-import fusionfootwear_admin_thumbnail from "@/assets/fusionfootwear_admin_thumnail.png";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import ProjectItem from "@/components/ui/ProjectItem";
@@ -43,7 +39,7 @@ export default function PortfolioHome() {
         <Container className="mx-auto max-lg:max-w-md max-lg:text-center grid lg:grid-cols-[3fr_5fr] gap-8 lg:gap-16 lg:items-center">
           <div className="relative aspect-square w-full mx-auto max-lg:max-w-sm overflow-hidden ">
             <Image
-              src={headshot}
+              src={"/thumbnails/headshot.jpeg"}
               alt="Headshot"
               priority
               fill
@@ -99,7 +95,7 @@ export default function PortfolioHome() {
               tech="Next.js, TypeScript, Tailwind, Prisma, Stripe"
               demoHref="https://fusionfootwear-store.vercel.app/"
               githubHref="https://github.com/JaiBh/fusionfootwear-store"
-              image={fusionfootwear_store_thumbnail}
+              image={"/thumbnails/fusionfootwear_store_thumnail.png"}
             ></ProjectItem>
             <ProjectItem
               title="Footwear E-Commerce Admin Panel"
@@ -107,7 +103,7 @@ export default function PortfolioHome() {
               tech="Next.js, ShadCN UI, Prisma, PostgreSQL"
               githubHref="https://github.com/JaiBh/fusionfootwear-admin"
               demoHref="https://www.fusionfootwear-admin.xyz/"
-              image={fusionfootwear_admin_thumbnail}
+              image={"/thumbnails/fusionfootwear_admin_thumbnail.png"}
             ></ProjectItem>
             <ProjectItem
               title="Personal Finance App"
@@ -115,7 +111,7 @@ export default function PortfolioHome() {
               tech="Next.js, TypeScript, Tailwind, Prisma, Clerk, PostgreSQL"
               demoHref="https://www.jaibh-finance.xyz"
               githubHref="https://github.com/JaiBh/nextjs-personal-finance-app"
-              image={personal_finance_thumbnail}
+              image={"/thumbnails/personal_finance_thumbnail.png"}
             ></ProjectItem>
           </div>
         </Container>

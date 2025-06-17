@@ -8,7 +8,7 @@ interface ProjectItemProps {
   title: string;
   desc: string;
   tech: string;
-  image: StaticImageData;
+  image: string;
 }
 
 function ProjectItem({
