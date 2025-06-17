@@ -7,19 +7,20 @@ import Container from "@/components/Container";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ContactForm from "@/components/ContactForm";
 import { Separator } from "@/components/ui/separator";
+import ModeToggle from "@/components/ModeToggle";
 
 export default function PortfolioHome() {
   return (
-    <main className="min-h-screen bg-background text-gray-900 p-6 md:p-10 space-y-10">
+    <main className="min-h-screen bg-background p-6 md:p-10 space-y-10">
       <section className=" text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Jai Bhullar</h1>
-        <p className="text-xl md:text-2xl text-gray-600">
+        <p className="text-xl md:text-2xl text-muted-foreground">
           Front-End / Full-Stack Developer
         </p>
-        <p className="mt-4 text-gray-500">
+        <p className="mt-4 text-muted-foreground">
           Building modern web apps with Next.js, TypeScript & Tailwind.
         </p>
-        <div className="mt-6 flex justify-center gap-4">
+        <div className="mt-6 flex justify-center items-center gap-4">
           <Button asChild className="py-5">
             <Link href={"#projects"} className="md:text-[1rem]">
               View Projects
@@ -30,6 +31,7 @@ export default function PortfolioHome() {
               Contact me
             </Link>
           </Button>
+          <ModeToggle></ModeToggle>
         </div>
       </section>
 
@@ -48,7 +50,7 @@ export default function PortfolioHome() {
           </div>
           <div className="space-y-6">
             <h2 className="text-2xl lg:text-3xl font-semibold">About Me</h2>
-            <p className="text-gray-700">
+            <p className="text-muted-foreground">
               I'm a self-taught web developer focused on building user-friendly,
               high-performance web applications.
               <br />
@@ -65,19 +67,20 @@ export default function PortfolioHome() {
               </div>
 
               <div className="space-x-2 space-y-2">
-                <Badge className="bg-blue-600">React</Badge>
-                <Badge className="bg-blue-600">Next.js</Badge>
-                <Badge className="bg-blue-600">Tailwind CSS</Badge>
-                <Badge className="bg-blue-600">Clerk</Badge>
+                <Badge className="bg-blue-600 dark:text-white">React</Badge>
+                <Badge className="bg-blue-600 dark:text-white">Next.js</Badge>
+                <Badge className="bg-blue-600 dark:text-white">
+                  Tailwind CSS
+                </Badge>
+                <Badge className="bg-blue-600 dark:text-white">Clerk</Badge>
               </div>
               <div className="space-x-2 space-y-2">
-                <Badge className="bg-slate-800">ShadCN UI</Badge>
-                <Badge className="bg-slate-800">Prisma</Badge>
-                <Badge className="bg-slate-800">PostgreSQL</Badge>
-                <Badge className="bg-slate-800">NeonDB</Badge>
-
-                <Badge className="bg-slate-800">Git</Badge>
-                <Badge className="bg-slate-800">Vercel</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">ShadCN UI</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">Prisma</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">PostgreSQL</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">NeonDB</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">Git</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">Vercel</Badge>
               </div>
             </div>
           </div>
@@ -121,10 +124,10 @@ export default function PortfolioHome() {
       <section id="contact" className="text-center max-w-xl mx-auto space-y-4">
         <h2 className="text-3xl font-semibold">Contact</h2>
         <div className="space-y-2">
-          <p className=" text-gray-600">
+          <p className="text-muted-foreground">
             Get in touch if you'd like to work together or have any questions.
           </p>
-          <p className="text-gray-700">
+          <p>
             Email:{" "}
             <Link
               target="_blank"

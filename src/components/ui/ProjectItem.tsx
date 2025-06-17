@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "./card";
 
@@ -41,20 +41,32 @@ function ProjectItem({
               </Link>
             </div>
           </div>
-          <div className="space-y-3  flex flex-col justify-between">
+          <div className="space-y-5  flex flex-col justify-between">
             <div className="space-y-3">
               <h3 className="text-xl font-bold capitalize">{title}</h3>
-              <p className="text-gray-700">{desc}</p>
+              <p className="">{desc}</p>
             </div>
-            <div className="space-y-2 ">
-              <p className="text-sm text-gray-500 capitalize">Tech: {tech}</p>
+            <div className="space-y-2">
+              <p className="text-sm text-muted-foreground capitalize">
+                Tech: {tech}
+              </p>
               <div className="flex gap-3">
-                <a href={demoHref} className="text-blue-600 hover:underline">
+                <Link
+                  href={demoHref}
+                  className="text-blue-600 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Live Demo
-                </a>
-                <a href={githubHref} className="text-blue-600 hover:underline">
+                </Link>
+                <Link
+                  href={githubHref}
+                  className="text-blue-600 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
-                </a>
+                </Link>
               </div>
             </div>
           </div>
