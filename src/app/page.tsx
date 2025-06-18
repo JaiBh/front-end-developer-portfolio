@@ -20,7 +20,7 @@ export default function PortfolioHome() {
         <p className="mt-4 text-muted-foreground">
           Building modern web apps with Next.js, TypeScript & Tailwind.
         </p>
-        <div className="mt-6 flex justify-center items-center gap-4">
+        <div className="mt-6 flex justify-center items-center gap-4 flex-wrap">
           <Button asChild className="py-5">
             <Link href={"#projects"} className="md:text-[1rem]">
               View Projects
@@ -29,6 +29,11 @@ export default function PortfolioHome() {
           <Button asChild variant={"secondary"} className="border py-5">
             <Link href={"#contact"} className="md:text-[1rem]">
               Contact me
+            </Link>
+          </Button>
+          <Button asChild className="bg-blue text-white hover:bg-blue/90">
+            <Link href={"/JaiBhullar_CV_2025.pdf"} download>
+              Download My CV
             </Link>
           </Button>
           <ModeToggle></ModeToggle>
@@ -58,6 +63,11 @@ export default function PortfolioHome() {
               Prisma, and PostgreSQL (via NeonDB). I'm passionate about solving
               real-world problems through thoughtful design and clean code.
             </p>
+            <Button asChild className="bg-blue text-white hover:bg-blue/90">
+              <Link href={"/JaiBhullar_CV_2025.pdf"} download>
+                Download My CV
+              </Link>
+            </Button>
             <div className="space-y-3">
               <div className="space-x-2 space-y-2">
                 <Badge>HTML</Badge>
@@ -67,12 +77,10 @@ export default function PortfolioHome() {
               </div>
 
               <div className="space-x-2 space-y-2">
-                <Badge className="bg-blue-600 dark:text-white">React</Badge>
-                <Badge className="bg-blue-600 dark:text-white">Next.js</Badge>
-                <Badge className="bg-blue-600 dark:text-white">
-                  Tailwind CSS
-                </Badge>
-                <Badge className="bg-blue-600 dark:text-white">Clerk</Badge>
+                <Badge className="bg-blue text-white">React</Badge>
+                <Badge className="bg-blue text-white">Next.js</Badge>
+                <Badge className="bg-blue text-white">Tailwind CSS</Badge>
+                <Badge className="bg-blue text-white">Clerk</Badge>
               </div>
               <div className="space-x-2 space-y-2">
                 <Badge className="bg-slate-800 dark:bg-white">ShadCN UI</Badge>
