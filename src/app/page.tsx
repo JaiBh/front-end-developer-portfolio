@@ -101,7 +101,7 @@ export default function PortfolioHome() {
               image={"/thumbnails/fusionfootwear_store_thumnail.png"}
             ></ProjectItem>
             <ProjectItem
-              title="Footwear E-Commerce Admin Panel"
+              title="Footwear E-Commerce Admin"
               desc="Manage products, orders, and analytics for the footwear store in a clean dashboard UI."
               tech="Next.js, ShadCN UI, Prisma, PostgreSQL"
               githubHref="https://github.com/JaiBh/fusionfootwear-admin"

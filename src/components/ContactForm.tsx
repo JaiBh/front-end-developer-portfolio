@@ -6,7 +6,7 @@ import { Textarea } from "./ui/textarea";
 function ContactForm() {
   return (
     <form
-      action="https://formspree.io/f/xgvyzajy"
+      action={`process.env.FORMSPREE_ACTION_URL`}
       method="POST"
       className="max-w-5xl bg-primary/20 rounded-xl py-8 px-6 space-y-5"
     >
