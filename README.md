@@ -58,6 +58,7 @@ npm run dev
 /
 ├── app/ # App Router structure
 ├── components/ # Reusable UI components
+├── lib/ # Helpers and config utils
 ```
 
 ---
