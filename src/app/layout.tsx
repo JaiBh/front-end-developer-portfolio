@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Jai Bhullar – Front-End Developer Portfolio",
   description:
-    "Portfolio of Jai Bhullar – self-taught front-end developer based in London. Showcasing full-stack web apps built with Next.js, TypeScript, Tailwind CSS, Prisma, and Clerk.",
+    "Portfolio of Jai Bhullar – self-taught front-end developer based near London. Showcasing full-stack web apps built with Next.js, TypeScript, Tailwind CSS, Prisma, and Clerk.",
   icons: {
     icon: "/favicon.ico",
   },
