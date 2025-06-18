@@ -77,9 +77,9 @@ FORMSPREE_ACTION_URL=...
 
 Built by [**Jai Bhullar**](https://jaibh-portfolio.vercel.app/) – aspiring front-end/full-stack developer based near London.
 
-📫 Email: jaibhullar.developer@outlook.com
-🔗 **LinkedIn:** [linkedin.com/in/jai-bhullar-dev](https://www.linkedin.com/in/jai-bhullar-dev)
-📄 **[Download My CV](https://drive.google.com/file/d/1hf9GW7EhEZx7PDJTR3cnJ9PKki6g9gRR/view?usp=sharing)**
+- 📫 Email: jaibhullar.developer@outlook.com
+- 🔗 **LinkedIn:** [linkedin.com/in/jai-bhullar-dev](https://www.linkedin.com/in/jai-bhullar-dev)
+- 📄 [View My CV](https://drive.google.com/file/d/1j2kYSzZ5HjxdfK2MaI9PJ9L5ZaV0qrnB/view?usp=sharing)
 
 ---
 
