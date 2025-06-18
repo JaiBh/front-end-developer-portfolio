@@ -58,9 +58,6 @@ npm run dev
 /
 ├── app/ # App Router structure
 ├── components/ # Reusable UI components
-├── public/ # Static assets
-├── styles/ # Global styles
-└── utils/ # Utility functions and metadata
 ```
 
 ---
