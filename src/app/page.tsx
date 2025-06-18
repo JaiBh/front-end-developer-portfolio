@@ -159,7 +159,7 @@ export default function PortfolioHome() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://linkedin.com/in/jaibhullar"
+            href="www.linkedin.com/in/jai-bhullar-9540b8370"
             className="text-blue-500 hover:underline transition hover:opacity-70"
           >
             <FaLinkedin size={32} />
