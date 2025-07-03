@@ -60,7 +60,8 @@ export default function PortfolioHome() {
               high-performance web applications.
               <br />
               My stack includes React, Next.js, TypeScript, Tailwind CSS,
-              Prisma, and PostgreSQL (via NeonDB). I'm passionate about solving
+              Prisma, and PostgreSQL (via NeonDB) and automated testing using
+              Jest and React Testing Library. I'm passionate about solving
               real-world problems through thoughtful design and clean code.
             </p>
             <Button asChild className="bg-blue text-white hover:bg-blue/90">
@@ -87,6 +88,10 @@ export default function PortfolioHome() {
                 <Badge className="bg-slate-800 dark:bg-white">Prisma</Badge>
                 <Badge className="bg-slate-800 dark:bg-white">PostgreSQL</Badge>
                 <Badge className="bg-slate-800 dark:bg-white">NeonDB</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">Jest</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">
+                  React Testing Library
+                </Badge>
                 <Badge className="bg-slate-800 dark:bg-white">Git</Badge>
                 <Badge className="bg-slate-800 dark:bg-white">Vercel</Badge>
               </div>
@@ -110,8 +115,8 @@ export default function PortfolioHome() {
             ></ProjectItem>
             <ProjectItem
               title="Footwear E-Commerce Admin"
-              desc="Manage products, orders, and analytics for the footwear store in a clean dashboard UI."
-              tech="Next.js, ShadCN UI, Prisma, PostgreSQL"
+              desc="Manage products, orders, and analytics for the footwear store in a clean, tested dashboard UI. Built with modern full-stack tools and includes automated testing for form validation and logic."
+              tech="Next.js, ShadCN UI, Prisma, PostgreSQL, Jest"
               githubHref="https://github.com/JaiBh/fusionfootwear-admin"
               demoHref="https://www.fusionfootwear-admin.xyz/"
               image={"/thumbnails/fusionfootwear_admin_thumbnail.png"}
