@@ -60,9 +60,13 @@ export default function PortfolioHome() {
               high-performance web applications.
               <br />
               My stack includes React, Next.js, TypeScript, Tailwind CSS,
-              Prisma, and PostgreSQL (via NeonDB) and automated testing using
-              Jest and React Testing Library. I'm passionate about solving
-              real-world problems through thoughtful design and clean code.
+              Prisma, and PostgreSQL (via NeonDB), with experience in AI
+              integrations and event-driven backends using tools like OpenAI
+              API, Inngest, and TRPC. I also write automated tests with Jest and
+              React Testing Library.
+              <br />
+              I'm passionate about solving real-world problems through
+              thoughtful design and clean code.
             </p>
             <Button asChild className="bg-blue text-white hover:bg-blue/90">
               <Link href={"/JaiBhullar_CV_2025.pdf"} download>
@@ -82,6 +86,14 @@ export default function PortfolioHome() {
                 <Badge className="bg-blue text-white">Next.js</Badge>
                 <Badge className="bg-blue text-white">Tailwind CSS</Badge>
                 <Badge className="bg-blue text-white">Clerk</Badge>
+              </div>
+              <div className="space-x-2 space-y-2">
+                <Badge className="bg-slate-800 dark:bg-white">TRPC</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">Inngest</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">OpenAI API</Badge>
+                <Badge className="bg-slate-800 dark:bg-white">
+                  E2B Sandboxes
+                </Badge>
               </div>
               <div className="space-x-2 space-y-2">
                 <Badge className="bg-slate-800 dark:bg-white">ShadCN UI</Badge>
@@ -128,6 +140,14 @@ export default function PortfolioHome() {
               demoHref="https://www.jaibh-finance.xyz"
               githubHref="https://github.com/JaiBh/nextjs-personal-finance-app"
               image={"/thumbnails/personal_finance_thumbnail.png"}
+            ></ProjectItem>
+            <ProjectItem
+              title="Promptly"
+              desc="Promptly is a tool for generating simple, working Next.js websites from text prompts using AI. Great for prototyping and exploring ideas fast."
+              tech="Next.Js, Typescript, Prisma, OpenAI API, Inngest, E2B, tRPC"
+              demoHref="https://jaibh-promptly.vercel.app/"
+              githubHref="https://github.com/JaiBh/promptly"
+              image="/thumbnails/promptly.png"
             ></ProjectItem>
           </div>
         </Container>
