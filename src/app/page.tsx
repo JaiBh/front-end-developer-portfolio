@@ -44,7 +44,7 @@ export default function PortfolioHome() {
 
       <section id="about" className=" ">
         <Container className="mx-auto max-lg:max-w-md max-lg:text-center grid lg:grid-cols-[3fr_5fr] gap-8 lg:gap-16 lg:items-center">
-          <div className="relative aspect-square w-full mx-auto max-lg:max-w-sm overflow-hidden ">
+          <div className="relative aspect-square w-full mx-auto max-lg:max-w-sm overflow-hidden">
             <Image
               src={"/thumbnails/headshot.jpeg"}
               alt="Headshot"
@@ -56,14 +56,17 @@ export default function PortfolioHome() {
           <div className="space-y-6">
             <h2 className="text-2xl lg:text-3xl font-semibold">About Me</h2>
             <p className="text-muted-foreground">
-              I'm a self-taught web developer focused on building user-friendly,
-              high-performance web applications.
+              I'm a self-taught developer focused on building user-friendly,
+              high-performance web and mobile applications.
+              <br />
               <br />
               My stack includes React, Next.js, TypeScript, Tailwind CSS,
-              Prisma, and PostgreSQL (via NeonDB), with experience in AI
-              integrations and event-driven backends using tools like OpenAI
-              API, Inngest, and TRPC. I also write automated tests with Jest and
-              React Testing Library.
+              Prisma, and PostgreSQL (via NeonDB) - and React Native + Expo for
+              mobile development, with experience in AI integrations and
+              event-driven backends using tools like OpenAI API, Inngest, and
+              TRPC. I also write automated tests with Jest and React Testing
+              Library.
+              <br />
               <br />
               I'm passionate about solving real-world problems through
               thoughtful design and clean code.
@@ -73,39 +76,55 @@ export default function PortfolioHome() {
                 Download My CV
               </Link>
             </Button>
-            <div className="space-y-3">
+            <div className="space-y-3 ">
+              {/* Core languages */}
               <div className="space-x-2 space-y-2">
-                <Badge>HTML</Badge>
-                <Badge>CSS</Badge>
-                <Badge>JavaScript</Badge>
-                <Badge>TypeScript</Badge>
+                <Badge className="dark:text-stone-800">HTML</Badge>
+                <Badge className="dark:text-stone-800">CSS</Badge>
+                <Badge className="dark:text-stone-800">JavaScript</Badge>
+                <Badge className="dark:text-stone-800">TypeScript</Badge>
               </div>
-
+              {/* frontend frameworks & styling */}
               <div className="space-x-2 space-y-2">
                 <Badge className="bg-blue text-white">React</Badge>
                 <Badge className="bg-blue text-white">Next.js</Badge>
+
                 <Badge className="bg-blue text-white">Tailwind CSS</Badge>
-                <Badge className="bg-blue text-white">Clerk</Badge>
+                <Badge className="bg-blue text-white">Shadcn UI</Badge>
               </div>
+              {/* Mobile Dev */}
               <div className="space-x-2 space-y-2">
-                <Badge className="bg-slate-800 dark:bg-white">TRPC</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">Inngest</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">OpenAI API</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">
+                <Badge className="bg-emerald-700 text-white">
+                  React Native
+                </Badge>
+                <Badge className="bg-emerald-700 text-white">Expo</Badge>
+                <Badge className="bg-emerald-700 text-white">NativeWind</Badge>
+              </div>
+              {/* Backend, Authentication & API */}
+              <div className="space-x-2 space-y-2">
+                <Badge className="bg-indigo-800 text-white">Prisma</Badge>
+                <Badge className="bg-indigo-800 text-white">PostgreSQL</Badge>
+                <Badge className="bg-indigo-800 text-white">TRPC</Badge>
+                <Badge className="bg-indigo-800 text-white">NeonDB</Badge>
+                <Badge className="bg-indigo-800 text-white">Supabase</Badge>
+                <Badge className="bg-indigo-800 text-white">Appwrite</Badge>
+              </div>
+              {/* AI & Automation */}
+              <div className="space-x-2 space-y-2">
+                <Badge className="bg-purple-700 text-white">OpenAI API</Badge>
+                <Badge className="bg-purple-700 text-white">Inngest</Badge>
+                <Badge className="bg-purple-700 text-white">
                   E2B Sandboxes
                 </Badge>
               </div>
+              {/* Testing, tools & Deployment */}
               <div className="space-x-2 space-y-2">
-                <Badge className="bg-slate-800 dark:bg-white">ShadCN UI</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">Prisma</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">PostgreSQL</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">NeonDB</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">Jest</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">
+                <Badge className="bg-stone-700 text-white">Jest</Badge>
+                <Badge className="bg-stone-700 text-white">
                   React Testing Library
                 </Badge>
-                <Badge className="bg-slate-800 dark:bg-white">Git</Badge>
-                <Badge className="bg-slate-800 dark:bg-white">Vercel</Badge>
+                <Badge className="bg-stone-700 text-white">Git</Badge>
+                <Badge className="bg-stone-700 text-white">Vercel</Badge>
               </div>
             </div>
           </div>
@@ -149,6 +168,14 @@ export default function PortfolioHome() {
               githubHref="https://github.com/JaiBh/promptly"
               image="/thumbnails/promptly.png"
             ></ProjectItem>
+            <ProjectItem
+              title="MovieFlix"
+              desc="Mobile app to browse, save, and manage movies using the TMDB API. Built with React Native and Expo, featuring Clerk auth, a saved movies list, and a custom profile page."
+              tech="React Native, Expo, TypeScript, Clerk, TMDB API, Jotai"
+              githubHref="https://github.com/JaiBh/MovieFlix"
+              demoHref="https://www.youtube.com/shorts/_XT4F4Dq1_c"
+              image="/thumbnails/movieflix.jpg"
+            />
           </div>
         </Container>
       </section>
