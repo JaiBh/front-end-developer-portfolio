@@ -61,11 +61,11 @@ export default function PortfolioHome() {
               <br />
               <br />
               My stack includes React, Next.js, TypeScript, Tailwind CSS,
-              Prisma, and PostgreSQL (via NeonDB) - and React Native + Expo for
-              mobile development, with experience in AI integrations and
-              event-driven backends using tools like OpenAI API, Inngest, and
-              TRPC. I also write automated tests with Jest and React Testing
-              Library.
+              Prisma, and PostgreSQL (via NeonDB), and TanStack React Query for
+              server state - plus React Native + Expo for mobile development,
+              with experience in AI integrations and event-driven backends using
+              tools like OpenAI API, Inngest, and tRPC. I also write automated
+              tests with Jest and React Testing Library.
               <br />
               <br />
               I'm passionate about solving real-world problems through
@@ -92,6 +92,13 @@ export default function PortfolioHome() {
                 <Badge className="bg-blue text-white">Tailwind CSS</Badge>
                 <Badge className="bg-blue text-white">Shadcn UI</Badge>
               </div>
+              {/* State & Data */}
+              <div className="space-x-2 space-y-2">
+                <Badge className="bg-blue text-white">
+                  TanStack React Query
+                </Badge>
+                <Badge className="bg-blue text-white">Jotai</Badge>
+              </div>
               {/* Mobile Dev */}
               <div className="space-x-2 space-y-2">
                 <Badge className="bg-emerald-700 text-white">
@@ -104,7 +111,7 @@ export default function PortfolioHome() {
               <div className="space-x-2 space-y-2">
                 <Badge className="bg-indigo-800 text-white">Prisma</Badge>
                 <Badge className="bg-indigo-800 text-white">PostgreSQL</Badge>
-                <Badge className="bg-indigo-800 text-white">TRPC</Badge>
+                <Badge className="bg-indigo-800 text-white">tRPC</Badge>
                 <Badge className="bg-indigo-800 text-white">NeonDB</Badge>
                 <Badge className="bg-indigo-800 text-white">Supabase</Badge>
                 <Badge className="bg-indigo-800 text-white">Appwrite</Badge>
@@ -138,8 +145,8 @@ export default function PortfolioHome() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-md:gap-y-10">
             <ProjectItem
               title="Footwear E-Commerce Store"
-              desc="Modern storefront with product filters, saved items, cart, user and guest checkout and orders list."
-              tech="Next.js, TypeScript, Tailwind, Prisma, Stripe"
+              desc="Modern storefront with product filters, saved items, cart, user and guest checkout and orders list. Server state handled with TanStack React Query."
+              tech="Next.js, TypeScript, Tailwind, Prisma, TanStack React Query, Stripe, Convex Auth"
               demoHref="https://fusionfootwear-store.vercel.app/"
               githubHref="https://github.com/JaiBh/fusionfootwear-store"
               image={"/thumbnails/fusionfootwear_store_thumnail.png"}
