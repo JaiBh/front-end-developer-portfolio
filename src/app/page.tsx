@@ -46,7 +46,7 @@ export default function PortfolioHome() {
         <Container className="mx-auto max-lg:max-w-md max-lg:text-center grid lg:grid-cols-[3fr_5fr] gap-8 lg:gap-16 lg:items-center">
           <div className="relative aspect-square w-full mx-auto max-lg:max-w-sm overflow-hidden">
             <Image
-              src={"/thumbnails/headshot.jpeg"}
+              src={"/thumbnails/headshot.jpg"}
               alt="Headshot"
               priority
               fill
