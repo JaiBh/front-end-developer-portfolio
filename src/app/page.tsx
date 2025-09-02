@@ -32,9 +32,7 @@ export default function PortfolioHome() {
             </Link>
           </Button>
           <Button asChild className="bg-blue text-white hover:bg-blue/90">
-            <Link href={"/JaiBhullar_CV_2025.pdf"} download>
-              Download My CV
-            </Link>
+            <a href={"/cv.pdf"}>Download My CV</a>
           </Button>
           <ModeToggle></ModeToggle>
         </div>
@@ -72,9 +70,7 @@ export default function PortfolioHome() {
               thoughtful design and clean code.
             </p>
             <Button asChild className="bg-blue text-white hover:bg-blue/90">
-              <Link href={"/JaiBhullar_CV_2025.pdf"} download>
-                Download My CV
-              </Link>
+              <a href={"/cv.pdf"}>Download My CV</a>
             </Button>
             <div className="space-y-3 ">
               {/* Core languages */}
